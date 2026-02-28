@@ -7,11 +7,6 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        ca-certificates \
        build-essential \
-       wkhtmltopdf \
-       libxrender1 \
-       libfontconfig1 \
-       libfreetype6 \
-       libx11-6 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
