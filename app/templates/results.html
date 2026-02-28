@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>Results</h2>
+  <div id="results-area">
+    <div class="ats-score">
+      <h4>ATS Match</h4>
+      <div class="progress">
+        <div id="progress-bar" class="progress-fill" style="width:0%"></div>
+      </div>
+      <div id="score-text">Score: 0%</div>
+    </div>
+
+    <div class="badges">
+      <h4>Matched Keywords</h4>
+      <div id="matched"></div>
+      <h4>Missing Keywords</h4>
+      <div id="missing"></div>
+    </div>
+
+    <div id="skill-gaps" style="margin-top:1rem"></div>
+  </div>
+</div>
+
+<script>
+// Placeholder: Results are returned by analyze flow which redirects here in full implementations.
+</script>
+
+{% endblock %}

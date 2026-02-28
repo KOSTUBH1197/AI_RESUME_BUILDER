@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>Resume Builder</h2>
+  <form id="resume-form">
+    <div class="step" data-step="1">
+      <h4>Header</h4>
+      <div class="grid">
+        <input name="name" placeholder="Full name" required>
+        <input name="title" placeholder="Professional title">
+        <input name="email" placeholder="Email">
+        <input name="phone" placeholder="Phone">
+      </div>
+      <div class="actions">
+        <button type="button" class="btn" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="step" data-step="2" style="display:none">
+      <h4>Experience (add comma-separated bullets)</h4>
+      <textarea name="experience" placeholder="Company | Role | Years | bullet1; bullet2; bullet3"></textarea>
+      <div class="actions">
+        <button type="button" class="btn ghost" onclick="prevStep()">Back</button>
+        <button type="button" class="btn" onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div class="step" data-step="3" style="display:none">
+      <h4>Education & Projects</h4>
+      <textarea name="education" placeholder="School | Degree | Year"></textarea>
+      <textarea name="projects" placeholder="Project | Summary | link"></textarea>
+      <div class="actions">
+        <button type="button" class="btn ghost" onclick="prevStep()">Back</button>
+        <button type="button" class="btn primary" onclick="submitResume()">Generate</button>
+      </div>
+    </div>
+  </form>
+  <div id="resume-result" style="margin-top:1rem"></div>
+</div>
+<script src="/static/js/multistep.js"></script>
+{% endblock %}

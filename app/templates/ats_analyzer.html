@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>ATS Analyzer</h2>
+  <div class="grid two-cols">
+    <div>
+      <label>Job Description</label>
+      <textarea id="job" rows="10" placeholder="Paste job description"></textarea>
+    </div>
+    <div>
+      <label>Your Resume Text</label>
+      <textarea id="resume" rows="10" placeholder="Paste resume text or generated resume"></textarea>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="btn primary" onclick="analyzeATS()">Analyze</button>
+  </div>
+  <div id="ats-result" style="margin-top:1rem"></div>
+</div>
+<script src="/static/js/ats.js"></script>
+{% endblock %}

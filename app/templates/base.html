@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ResumeForge AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="rf-header">
+      <div class="container">
+        <a class="brand" href="/">ResumeForge AI</a>
+        <nav class="nav">
+          <a href="/resume">Resume Builder</a>
+          <a href="/ats">ATS Analyzer</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container content">
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="rf-footer">
+      <div class="container">© ResumeForge AI</div>
+    </footer>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

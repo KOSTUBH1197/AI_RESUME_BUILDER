@@ -1,0 +1,18 @@
+/* Clean, print-friendly resume stylesheet */
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:#fff;color:#0b1220}
+.resume-sheet{max-width:800px;margin:20px auto;padding:36px;border:1px solid #e6e9ef}
+.r-header{text-align:center;margin-bottom:12px}
+.r-name{font-size:20px;font-weight:700}
+.r-title{color:#6b7280;margin-top:4px}
+.r-contact{color:#9ca3af;margin-top:6px;font-size:13px}
+.r-section{margin-top:16px}
+.r-section h3{font-size:13px;text-transform:uppercase;color:#374151;border-bottom:1px solid #eef2ff;padding-bottom:6px}
+.r-item{margin-top:8px}
+.r-item-head{display:flex;gap:12px;align-items:center}
+.r-item-head .muted{color:#6b7280;font-size:13px}
+.r-item-head .r-years{margin-left:auto;color:#9ca3af;font-size:13px}
+ul{margin:6px 0 0 18px}
+.skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.skill{background:#f3f4f6;padding:6px 8px;border-radius:8px;font-size:12px}
+
+@media print{body{background:#fff}.resume-sheet{border:none;padding:0;margin:0}}
