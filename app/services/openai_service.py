@@ -2,7 +2,7 @@
 import json
 import openai
 from typing import Dict, Any
-from config import settings
+from app.config import settings
 
 openai.api_key = settings.OPENAI_API_KEY
 

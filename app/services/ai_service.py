@@ -1,7 +1,7 @@
 """High-level AI service functions that implement the product features using prompts and the OpenAI wrapper."""
 from typing import Dict, Any
-from prompts import PROMPTS
-from services.openai_service import call_chat
+from app.prompts import PROMPTS
+from app.services.openai_service import call_chat
 
 
 def generate_resume(structured_input: Dict[str, Any]) -> Dict[str, Any]:

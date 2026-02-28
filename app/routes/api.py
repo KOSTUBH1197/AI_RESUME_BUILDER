@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
-from services.ai_service import generate_resume, analyze_ats, skill_gap_analysis, generate_cover_letter
+from app.services.ai_service import generate_resume, analyze_ats, skill_gap_analysis, generate_cover_letter
 import pdfkit
 import io
 import os

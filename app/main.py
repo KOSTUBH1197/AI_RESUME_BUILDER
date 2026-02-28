@@ -6,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.web import router as web_router
 from app.routes.api import router as api_router
-from config import settings
+from app.config import settings
 
 app = FastAPI(title="ResumeForge AI")
 
