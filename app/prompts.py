@@ -17,8 +17,7 @@ PROMPTS: Dict[str, Dict[str, str]] = {
             "compare against the provided resume content, compute a match score (0-100), list missing keywords, "
             "and provide suggestions. Return only JSON with keys: score, matched_keywords, missing_keywords, suggestions."
         ),
-        "user": "JOB_DESCRIPTION: {job}
-RESUME_TEXT: {resume}"
+        "user": "JOB_DESCRIPTION: {job}\nRESUME_TEXT: {resume}"
     },
     "skill_gap": {
         "system": (
