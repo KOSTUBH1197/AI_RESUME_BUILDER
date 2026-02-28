@@ -4,8 +4,8 @@ Application entrypoint - FastAPI app configured with Jinja2 templates and routes
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from routes.web import router as web_router
-from routes.api import router as api_router
+from app.routes.web import router as web_router
+from app.routes.api import router as api_router
 from config import settings
 
 app = FastAPI(title="ResumeForge AI")
